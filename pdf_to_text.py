@@ -1,11 +1,11 @@
 import fitz
 import sys
 import os
-from logging import getLogger, DEBUG, StreamHandler
+from logging import getLogger, DEBUG, INFO, StreamHandler
 logger = getLogger(__name__)
-logger.setLevel(DEBUG)
+logger.setLevel(INFO)
 handler = StreamHandler()
-handler.setLevel(DEBUG)
+handler.setLevel(INFO)
 logger.addHandler(handler)
 
 args = sys.argv
